@@ -1,0 +1,67 @@
+.columna{
+	float:left;
+	width:470px;
+	height:450px;
+	padding-left:13px;
+}
+.producto{
+	margin-top: 7px;
+	margin-left: 7px;
+	width:460px;
+	padding:5px 0px 5px 0px;
+	height:80px;
+}
+
+.foto{
+	padding-left:-5px;
+	float:left;
+	height:80px;
+	width:80px;
+}
+
+.descript{
+	font:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding:0;
+	padding-left:5px;
+	float:left;
+	width:335px;
+	height:80px;
+	text-align:left;
+	overflow:hidden;
+}
+.columna  a{
+	background-image:url(/views/images/fondo-form.jpg);
+	font:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:none;
+	text-align:left;
+	color:#FFFFFF;
+	display: block; 
+}
+.columna  a:hover {
+	background-image:url(/views/images/fondo-hover.jpg);
+	font:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:none;
+	text-align:left;
+	color:#CCCCCC;
+	
+}
+.titulo{
+	vertical-align:top;
+	margin:0;
+	color:#FFFFFF;
+	text-align:left;
+	font:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 16px;
+}
+
+.texto{
+	vertical-align:top;
+	color:#FFFFFF;
+	text-align:left;
+	font:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}

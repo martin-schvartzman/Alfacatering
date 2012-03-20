@@ -1,0 +1,54 @@
+<?php
+echo '<link rel="stylesheet" type="text/css" href="/views/admin/abmsubcategorias.css" />';
+
+if(isset($_POST["delete"])){
+$xx=new subcat($_POST["id"]);
+$xx->delete();
+}
+
+if(isset($_POST["subir"])){
+$xx=new subcat($_POST["id"]);
+$xx->subir();
+}
+
+if(isset($_POST["bajar"])){
+$xx=new subcat($_POST["id"]);
+$xx->bajar();
+}
+
+if(isset($_POST["new"])){
+$yy=new categoria($_POST["categoria"]);
+$yy->add($_POST["nombre"],$_POST["descripcion"]);
+$_GET["procat"]=$_POST["categoria"];
+}
+
+if(isset($_POST["edit"])){
+$yy=new subcat($_POST["id"]);
+$yy->edit($_POST["nombre"],$_POST["descripcion"],$_POST["categoria"]);
+$_GET["procat"]=$_POST["categoria"];
+}
+
+$procat=0;
+if(isset($_GET["procat"])){
+$procat=$_GET["procat"];
+}
+
+$cats=new categorias();
+$cats=$cats->traer();
+
+
+if(!isset($cats[0])){
+$subs=array();
+$cat=0;
+}
+else{
+if($procat==0){
+$subs=$cats[0]->traer();
+$cat=$cats[0]->id;
+}else{
+$subs=new categoria($procat);
+$subs=$subs->traer();
+$cat=$procat;
+}}
+
+?>

@@ -1,0 +1,99 @@
+<?php
+echo '<link rel="stylesheet" type="text/css" href="/views/admin/abmnotas.css" />';
+set_time_limit(200);
+//sdf
+
+if(isset($_POST["delete"])){
+$xx=new noticia($_POST["id"]);
+$xx->delete();
+}
+
+if(isset($_POST["edit"])){
+
+$yy=new pictures();
+$noti=new noticia($_POST["id"]);
+
+
+if(isset($_POST["checkfoto"]) && $_FILES["foto"]["error"] == 0){
+	$fot=$yy->makef($_FILES["foto"]["tmp_name"]);
+}else{
+$fot=0;
+}
+
+if(isset($_POST["checkvideo"])){
+$vid=$_POST["video"];
+}else{
+$vid=0;
+}
+
+if(isset($_POST["checkgal"])){
+	$fots=array();
+	for($i=1;$i <= 10;$i++){
+		if($_FILES["fotoarchivo".$i]["error"] == 0){
+			$fots[$i]=$_FILES["fotoarchivo".$i]["tmp_name"];
+			$fotgal=$yy->makef($fots[$i]);
+			$noti->galeria->edit($i,$fotgal);
+		}
+	}
+
+}else{
+$gal=0;
+}
+
+
+$tit=$_POST["titulo"];
+$fec=$_POST["anio"]."-".$_POST["mes"]."-".$_POST["dia"];
+$tex=$_POST["descripcion"];
+
+$noti->edit($fec,$tit,$tex,$vid,$fot);
+
+
+}
+
+if(isset($_POST["new"])){
+
+$yy=new pictures();
+$noti=new noticias();
+
+
+if(isset($_POST["checkfoto"]) && $_FILES["foto"]["error"] == 0){
+	$fot=$yy->makef($_FILES["foto"]["tmp_name"]);
+}else{
+$fot=0;
+}
+
+if(isset($_POST["checkvideo"])){
+$vid=$_POST["video"];
+}else{
+$vid=0;
+}
+
+if(isset($_POST["checkgal"])){
+	$fots=array();
+	for($i=1;$i <= 10;$i++){
+		if($_FILES["fotoarchivo".$i]["error"] == 0){
+			$fots[$i]=$_FILES["fotoarchivo".$i]["tmp_name"];
+		}else{
+			$fots[$i]=0;
+		}
+	}
+	//var_dump($fots);
+	$gal=$yy->makeg($fots[1],$fots[2],$fots[3],$fots[4],$fots[5],$fots[6],$fots[7],$fots[8],$fots[9],$fots[10]);
+}else{
+$gal=0;
+}
+
+
+$tit=$_POST["titulo"];
+$fec=$_POST["anio"]."-".$_POST["mes"]."-".$_POST["dia"];
+$tex=$_POST["descripcion"];
+
+$noti->add($fec,$tit,$tex,$vid,$fot,$gal);
+
+
+}
+
+$pros=new noticias();
+$pros=$pros->traer();
+
+?>

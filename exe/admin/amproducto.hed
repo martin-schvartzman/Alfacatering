@@ -1,0 +1,16 @@
+<?php
+echo '<link rel="stylesheet" type="text/css" href="/views/admin/amproducto.css" />';
+echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>';
+echo '<script type="text/javascript" src="exe/admin/amproducto.js"></script>';
+$new=true;
+if($_POST["id"] != 0){
+$produ=new producto($_POST["id"]);
+$new=false;
+$day=date('j',strtotime($produ->descripcion->fecha));
+$mon=date('n',strtotime($produ->descripcion->fecha));
+$yea=date('Y',strtotime($produ->descripcion->fecha));
+
+}
+
+
+?>

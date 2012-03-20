@@ -1,0 +1,31 @@
+<?php
+
+require("/packages/index.pck");
+if(!isset($_GET["cat"]))
+$category="home";
+else
+$category=$_GET["cat"];
+
+echo '<link rel="stylesheet" href="/views/index/index.css"/>';
+include("/exe/index/".$category.".hed");
+$diseno="/views/index/".$category.".inc";
+
+
+
+
+
+$categorias=new categorias();
+$cat=$categorias->traer();
+$i=0;
+$catsub=array();
+foreach($cat as $c){
+$catsub[$i]["cat"]=$c;
+$sub=$c->traer();
+$n=0;
+foreach($sub as $s){
+$catsub[$i]["sub"][$n]=$s;
+$n++;
+}
+$i++;
+}
+?>

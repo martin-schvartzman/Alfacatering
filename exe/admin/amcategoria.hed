@@ -1,0 +1,11 @@
+<?php
+echo '<link rel="stylesheet" type="text/css" href="/views/admin/amcategoria.css" />';
+
+if($_POST["id"]==0){
+$new=true;
+}else{
+$new=false;
+$catgry=new categoria($_POST["id"]);
+}
+
+?>

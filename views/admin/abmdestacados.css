@@ -1,0 +1,161 @@
+.listacat div{
+	width:140px;
+	height:60px;
+}
+
+a,a:link,a:visited{
+	color:black;
+}
+
+a.actual{
+color:white;	
+}
+
+
+
+.categorias{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.btns {
+	height: 40px;
+	}
+	.btns div {
+	margin-left: 5px;
+	float: left;
+	background-color: powderBlue;
+	height: 30px;
+	padding: 5px;
+	cursor: pointer;
+	cursor: hand;
+	font-size: 16px;
+	font-family: Arial bold;
+		
+	}
+	
+	td.notas{
+	width: 170px;
+	padding: 20px;
+
+	}
+
+
+	.listado{
+		margin:0;
+		margin-left: 35px;
+		text-align: left;
+		vertical-align: top;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight:bold;
+		color:#666666;
+		width: 850px;
+	}
+	
+	.izq{
+		float:left;
+		margin:0;
+		margin-left: 35px;
+		text-align: left;
+		vertical-align: top;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight:bold;
+		color:#666666;
+		width: 300px;
+		height: 450px;
+
+	}
+	
+	.der{
+		background-color: #BBBBBB;
+		float:right;
+		margin:0;
+		margin-left: 35px;
+		text-align: left;
+		vertical-align: top;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight:bold;
+		color:#666666;
+		width: 480px;
+		height: 450px;
+	}
+		.listacat{
+		background-color:#999999;
+		float:left;
+		margin:5px;
+		text-align: left;
+		vertical-align: top;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight:bold;
+		color:#666666;
+		width: 150px;
+		padding-top:10px;
+
+	}
+	
+	
+	.pagina{
+	clear:left;
+		margin:0;
+		margin-left: 35px;
+		text-align: right;
+		vertical-align: botton;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight:bold;
+		color:#333333;
+		width: 850px;
+		height:30;
+	}
+	
+	
+	
+	
+	img {
+		display: block;
+		vertical-align: middle;
+		}
+		 
+	img.fotonota {
+		float: right;
+		display: block;
+		vertical-align: middle;
+		}	
+	img.fotochica {
+		height:40px;
+		width:40px;
+		}		
+	.texto{
+		float: left;
+		padding:10px;
+		vertical-align: top;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight:bold;
+		color:#333333;
+		
+	}	
+	.mensaje{
+		float: center;
+		width: 580px;
+		height: 30px;
+		color:#666666;
+		text-align:left;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+	
+	
+
+
+.titulo{
+	margin-left:40px;
+	font-family:Arial,sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#333333;
+	text-align:left;
+}

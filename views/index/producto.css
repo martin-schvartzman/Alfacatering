@@ -1,0 +1,178 @@
+#jqgallery{
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+background-image:url('http://depositosanantonio.com.ar/imagenes/opwhite.png');
+display:none;	
+}
+
+.contenido{
+height:595px;
+}
+
+#jqgallery div#closejq{
+	width:25px;
+	height:25px;
+	padding-left:755px;
+	padding-top:10px;
+	background-color:#000000;
+	border-left: 10px solid black;
+border-right: 10px solid black;
+}
+
+#jqgallery div#containerjq{
+	width:800px;
+	height:600px;
+	padding:20px;
+}
+
+#fotoframe,#fotoleft,#fotoright{
+	float:left;
+	height:600px;
+}
+
+#fotoright,#fotoleft{
+	width:50px;
+	background-color:#000000;
+	cursor:pointer;
+}
+#fotoframe{
+	width:700px;
+	background-color:black;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+
+.foto{
+	float: left;
+	margin:0;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 185px;
+	height: 310px;
+	padding: 0px; 
+	vertical-align:top;
+}
+.detalles{
+	vertical-align:top;
+	float: right;
+	text-align:left;
+	margin:0;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 745px;
+	height: 390px;
+	color:#FFFFFF;
+	padding: 10px; 
+	float: right;
+	background-image:url(/views/images/fondo-form.jpg);
+	background-repeat:repeat-x;
+}
+.video{
+	float: left;
+	text-align:left;
+	margin-top: 110px;
+	margin-left: 10px;
+	width: 175px;
+	height: 135px;
+	color:#FFFFFF;
+	padding: 5px; 
+	background-image:url(/views/images/fondo-form.jpg);
+	background-repeat:repeat-x;
+	background-position: 350px;
+
+}
+
+.productos{
+	float: right;
+	text-align:left;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 755px;
+	height: 135px;
+	color:#FFFFFF;
+	padding: 5px; 
+	padding-bottom:5px;
+	background-image:url(/views/images/fondo-form.jpg);
+	background-repeat:repeat-x;
+	background-position: 350px;
+	
+}
+
+.relacionados{
+	float: left;
+	text-align:left;
+	/*margin-top: 5px;*/
+	margin-right: 10px;
+	width: 120px;
+	height: 95px;
+	color:#FFFFFF;
+	padding: 5px; 
+	padding-bottom:5px;
+	background-image:url(/views/images/fondo-form.jpg);
+	background-repeat:repeat-x;
+	
+}
+td{
+	vertical-align:top;
+}
+table {
+	width: 185px;
+	height: 310px;
+	padding: 0px; 
+	/*background-image:url(/views/images/producto03.jpg);
+	background-repeat: no-repeat;*/
+	vertical-align:top;
+	border: 1px solid #FFFFFF;
+}
+.titulofoto{
+	width: 186px;
+	height: 25px;
+	color:#FFFFFF;
+	text-align:right;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	background-color:#333333;
+	filter:alpha(opacity=50);
+	opacity: 0.5;
+	-moz-opacity:0.5;
+
+}
+.titulo{
+	vertical-align:top;
+
+	color:#FFFFFF;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 14px;
+}
+
+.texto{
+	vertical-align:top;
+	color:#FFFFFF;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height:300px;
+overflow-y:auto;
+}
+.galeria {
+	display: inline;
+	vertical-align:bottom;	
+	float: left;
+	text-align:left;
+	margin-top: 0px;
+	margin-left: -10px;
+	color:#FFFFFF;
+	padding:10px; 
+}
+
+.galeria img{
+	width: 64px;
+	height: 64px;
+}

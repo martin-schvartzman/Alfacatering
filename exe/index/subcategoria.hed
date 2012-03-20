@@ -1,0 +1,5 @@
+<?php
+echo '<link rel="stylesheet" type="text/css" href="/views/index/subcategoria.css"/>';
+$sub=new subcat($_GET["id"]);
+$pro=$sub->traer();
+?>

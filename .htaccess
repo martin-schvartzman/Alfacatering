@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+Options +Indexes
+DirectoryIndex redirect.php
+RewriteEngine on
+#RewriteRule ^album/([1-9]+)/[a-z|1-9|\-]+.html$ \index.php?categoria=album&id=$1
+#RewriteRule ^foto/([1-9]+)/[a-z|1-9|\-]+.html$ \index.php?categoria=foto&id=$1
+#RewriteRule ^fotos/$ \index.php?categoria=fotos
+#RewriteRule ^servicio/$ \index.php?categoria=servicio
+#RewriteRule ^inicio/$ \index.php?categoria=inicio
+#RewriteRule ^contacto/$ \index.php?categoria=contacto
+

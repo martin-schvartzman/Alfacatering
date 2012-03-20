@@ -1,0 +1,8 @@
+<?php
+require("/packages/index/nota.pck");
+echo '<link rel="stylesheet" type="text/css" href="/views/index/nota.css" />';
+echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>';
+echo '<script type="text/javascript" src="exe/index/nota.js"></script>';
+$produ=new noticia($_GET["id"]);
+
+?>

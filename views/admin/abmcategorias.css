@@ -1,0 +1,42 @@
+input[type="submit"]{
+border:0px;
+}
+
+.tablacat{
+	padding:20px;
+	margin:0;
+	margin-left: 10px;
+	text-align: left;
+	vertical-align: top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color:#333333;
+}
+img {
+    display: block;
+	vertical-align: middle;
+    }
+.texto{
+	vertical-align: top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color:#333333;
+}	
+.titulo{
+	vertical-align: top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	color:#333333;
+}	
+.mensaje{
+	float: center;
+	width: 580px;
+	height: 30px;
+	color:#666666;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}

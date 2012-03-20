@@ -1,0 +1,6 @@
+<?php
+echo '<link rel="stylesheet" type="text/css" href="/views/index/indicenotas.css" />';
+$sub=new noticias();
+$pro=$sub->traer();
+
+?>

@@ -1,0 +1,10 @@
+<?php
+require("/packages/index/contacto.pck");
+echo '<link href="views/index/contacto.css" rel="stylesheet" type="text/css">';
+$sent=false;
+if(isset($_POST["mail"])){
+$sent=true;
+$n=$_POST["nombre"];
+}
+
+?>

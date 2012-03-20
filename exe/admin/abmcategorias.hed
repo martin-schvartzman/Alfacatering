@@ -1,0 +1,34 @@
+<?php
+echo '<link rel="stylesheet" type="text/css" href="/views/admin/abmcategorias.css" />';
+
+
+
+if(isset($_POST["bajar"])){
+$xx=new categoria($_POST["id"]);
+$xx->bajar();
+}
+
+if(isset($_POST["subir"])){
+$xx=new categoria($_POST["id"]);
+$xx->subir();
+}
+
+if(isset($_POST["delete"])){
+$xx=new categoria($_POST["id"]);
+$xx->delete();
+}
+
+if(isset($_POST["new"])){
+$xx=new categorias();
+$xx->add($_POST["nombre"]);
+}
+
+if(isset($_POST["edit"])){
+$xx=new categoria($_POST["id"]);
+$xx->edit($_POST["nombre"]);
+}
+
+
+$cats=new categorias();
+$cats=$cats->traer();
+?>

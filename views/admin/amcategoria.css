@@ -1,0 +1,135 @@
+.categoria{
+min-height:550px;
+margin:0;
+  }	
+
+  
+  .tablacat{
+	margin:0;
+	text-align: left;
+	vertical-align:top;
+}
+img {
+    display: block;
+	vertical-align: middle;
+    }
+.texto{
+	vertical-align: top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color:#333333;
+}
+.titulo{
+	vertical-align: top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight:bold;
+	color:#333333;
+}	
+.titulocat{
+	vertical-align: top;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	font-weight:bold;
+	color:#333333;
+}	
+
+.mensaje{
+	float: center;
+	width: 580px;
+	height: 30px;
+	color:#666666;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.titulo{
+	margin-left:40px;
+	font-family:Arial,sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#333333;
+	text-align:left;
+}
+#form {
+	font-family:Arial,sans-serif;
+	font-size:12px;
+	color:#333333;
+	text-align:left;
+	border:0px;
+    width:370px;
+	height:115px;
+    margin:auto;
+	}
+
+
+#form input{
+	margin:0px;
+   	background-color:#E4E1C7;
+	border: 0px;
+	color: #333333;
+	font-size: 12px;
+	padding: 0px;
+	height:27px;
+	border:2px inset;
+}
+
+#form input.btn {
+	width:156px;
+	height:35px;
+    padding:3px;
+    color:#333333;
+    background-color:#E4E1C7;
+    border:0px;
+}
+
+.menus {
+    margin-left:40px;
+
+}
+.menus2 {
+    margin-left:30px;
+
+}
+
+
+ul.menu{
+    display:inline;
+    list-style-type:none;
+    font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+
+
+ul.menu li a:link, ul.menu li a:visited, ul.menu li a:active {
+    float:left;
+    padding:10px 15px;
+    display:block;
+    background:#666666;
+    border:#F4F4F4 2px solid;
+	color:#FFFFFF;
+    text-decoration:none;
+}
+ul.menu li a:hover {
+    float:left;
+    padding:10px 15px;
+    display:block;
+    background:#999999;
+    border:0px ;
+     border:#F4F4F4 2px solid;
+	color:#FFFFFF;
+    text-decoration:none;
+}
+ul.menu li a.actual {
+    float:left;
+    padding:10px 15px;
+    display:block;
+    background:#CCCCCC;
+    border:#F4F4F4 2px solid;
+	color:#333333;
+    text-decoration:none;
+	font-weight:bold;
+	font-weight:bold;
+}

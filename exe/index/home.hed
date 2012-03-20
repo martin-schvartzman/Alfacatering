@@ -1,0 +1,10 @@
+<?php
+require("/packages/index/home.pck");
+echo '<link href="views/index/home.css" rel="stylesheet" type="text/css">';
+
+$des=new destacados();
+$desp=$des->productos();
+$desn=$des->notas();
+
+
+?>

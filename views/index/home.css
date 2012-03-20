@@ -1,0 +1,95 @@
+.notides{
+width: 215px;
+height: 92px;
+overflow: hidden;
+}
+
+.destacados{
+	margin-top: 0px;
+	margin-left: 10px;
+	width: 947px;
+	height: 310px;
+	color:#FFFFFF;
+	padding: 0; 
+}
+
+table.tabladestacados{
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 940px;
+	border: 0px;
+	padding:0px;
+	
+}
+td.tddestacados{
+	border-spacing: 0;
+	border-collapse: collapse;
+	height: 5px;
+	border: 0px;
+	padding:0px;
+	
+}
+
+
+td{
+	vertical-align:top;
+}
+
+.titulo{
+	vertical-align:top;
+	color:#FFFFFF;
+	text-align:left;
+	font:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 12px;
+}
+
+.noticias{
+	vertical-align:top;
+	margin-top: 37px;
+	margin-left: 10px;
+	width: 961px;
+	height: 112px;
+	color:#FFFFFF;
+	padding: 0px;
+	vertical-align:top;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.tablanoticias{
+	padding: 5px;
+	width: 232px;
+	height: 92px;
+	background-color:#7C6B52;
+	color:#FFFFFF;
+	text-align:left;
+	font:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+
+table.foto{
+	margin-top:5px;
+	width: 181px;
+	height: 310px;
+	padding: 0px; 
+	/*background-image:url(/views/images/producto03.jpg);
+	background-repeat: no-repeat;*/
+	vertical-align:top;
+	border: 1px solid #FFFFFF;
+}
+	
+.titulofoto{
+	width: 180px;
+	height: 25px;
+	color:#FFFFFF;
+	text-align:left;
+	font:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+	background-color:#333333;
+	filter:alpha(opacity=70);
+	opacity: 0.7;
+	-moz-opacity:0.7;
+}

@@ -1,0 +1,56 @@
+<?php
+echo '<link rel="stylesheet" type="text/css" href="/views/admin/abmdestacados.css" />';
+$des=new destacados();
+
+
+if(isset($_POST["destacap"])){
+$des->destacarp($_POST["id"]);
+}
+
+if(isset($_POST["deletep"])){
+$des->deletep($_POST["id"]);
+}
+
+if(isset($_POST["destacan"])){
+$des->destacarn($_POST["id"]);
+}
+
+if(isset($_POST["deleten"])){
+$des->deleten($_POST["id"]);
+}
+
+
+if(isset($_GET["cgy"])){
+	$cats=new categorias();
+	$cats=$cats->traer();
+	$cat=$_GET["cgy"];
+	if(isset($_GET["sub"])){
+		$subs=new categoria($cat);
+		$subs=$subs->traer();
+		$sub=$_GET["sub"];
+		$pros=new subcat($sub);
+		$pros=$pros->traer();
+	}else{
+		$subs=new categoria($cat);
+		$subs=$subs->traer();
+		$sub=$subs[0]->id;
+		$pros=$subs[0];
+		$pros=$pros->traer();
+	}
+}else{
+	$cats=new categorias();
+	$cats=$cats->traer();
+	$cat=$cats[0]->id;
+	$subs=$cats[0];
+	$subs=$subs->traer();
+	$sub=$subs[0]->id;
+	$pros=$subs[0];
+	$pros=$pros->traer();
+}
+
+$nots=new noticias();
+$nots=$nots->traer();
+$prods=$des->productos();
+$notis=$des->notas();
+
+?>

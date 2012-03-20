@@ -1,0 +1,8 @@
+<?php
+require("/packages/index/producto.pck");
+echo '<link href="views/index/producto.css" rel="stylesheet" type="text/css" />';
+echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>';
+echo '<script type="text/javascript" src="exe/index/producto.js"></script>';
+$produ=new producto($_GET["id"]);
+$rel=$produ->related();
+?>
