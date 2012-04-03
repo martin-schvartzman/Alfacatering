@@ -3,7 +3,7 @@
 
 <div id="containerjq">
 <div id="closejq">
-	<img src="http://bibliotecalangeley.com.ar/views/images/btn-eliminar.jpg" 
+	<img src="/views/images/btn-eliminar.jpg" 
 	style="cursor:pointer;cursor:hand;height:25px;width:25px;" />
 </div>
 	<div id="fotoleft">
